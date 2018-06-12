@@ -1,6 +1,7 @@
-const bodyParser = require("body-parser");
-const express = require("express");
 //Dependencies
+
+var bodyParser = require("body-parser");
+var express = require("express");
 var handlebars = require("express-handlebars");
 var path = require("path");
 var routes = require("./controllers/routes");

@@ -25,31 +25,31 @@ router.get("/contact-carl", (req, res) => {
 
 //Route handler for add a review page
 router.get("/add-review", (req, res) => {
-    console.log(`Contact page requested.`);
+    console.log(`Add review page requested.`);
     res.render("addReview");
 });
 
 //Route handler for reviews page
 router.get("/reviews", (req, res) => {
-    console.log(`Contact page requested.`);
+    console.log(`Reviews page requested.`);
     res.render("review");
 });
 
 //Route handler for interior projects page
 router.get("/interior-services", (req, res) => {
-    console.log(`Contact page requested.`);
+    console.log(`Interior services page requested.`);
     res.render("interior");
 });
 
 //Route handler for exterior projects page
 router.get("/exterior-services", (req, res) => {
-    console.log(`Contact page requested.`);
+    console.log(`Exterior services page requested.`);
     res.render("exterior");
 });
 
 //Route handler for special projects page
 router.get("/special-projects", (req, res) => {
-    console.log(`Contact page requested.`);
+    console.log(`Special projects page requested.`);
     res.render("special");
 });
 

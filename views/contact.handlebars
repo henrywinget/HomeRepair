@@ -1,7 +1,8 @@
-<!--Begin container -->
-<div class="container fluid">
+
     <!--Begin navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <!--Navbar container begin-->
+        <div class = "container fluid">
         <a class="navbar-brand" href="/">Carl's Home Repair and Remodeling</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +16,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    <a class="nav-link dropdown-toggle" href="/interior-services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         Services Offered
                     </a>
@@ -45,10 +46,12 @@
 
             </ul>
         </div>
+        </div>
     </nav>
     <!--End nav bar -->
 
-
+<!--Begin container -->
+<div class="container fluid">
     <br>
     <div class="row">
         <div class="col-12 col-sm-6">
@@ -72,42 +75,36 @@
         <div id = "contact-container" class = "container">
         <!--Begin contact form-->
         <div id="contact-form" class="col-12 col-sm-10">
-            <h3 class="col">Contact Carl</h3>
+            <h3>Contact Carl</h3>
             <br>
             <p>We will return your inquiry within (insert time here)</p>
             <br>
-            <form>
+            <form name="contact" action="send_form_email.php" method="post">
                 <div class="row">
                     <div class="form-group col">
-                        <label for="first-name">First name</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <label for="first_name">First name</label>
+                        <input type="text" class="form-control" maxlength="50" name="first_name" placeholder="">
                     </div>
                     <div class="form-group col">
-                        <label for="last-name">Last name</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <label for="last_name">Last name</label>
+                        <input type="text" class="form-control" maxlength="50" name="last_name" placeholder="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col">
-                        <label for="last-name">Phone number</label>
-                        <input type="tell" class="form-control" placeholder="">
+                        <label for="telephone">Phone number</label>
+                        <input type="tell" class="form-control" maxlength="30" name="telephone" placeholder="">
                     </div>
                     <br>
                     <div class="form-group col">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="email-input" placeholder="">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" maxlength="80" id="email-input" name="email" placeholder="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col">
-                        <label for="inquiry-title">Title</label>
-                        <input id="contact-title" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col">
-                        <label for="inquiry-title">Message</label>
-                        <textarea id="contact-body" type="text" class="form-control" rows="6"></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="contact-body" type="text" maxlength="1000" class="form-control" name="message" rows="6"></textarea>
                     </div>
                 </div>
                 <input class="btn btn-primary float-right" type="submit" value="Submit">

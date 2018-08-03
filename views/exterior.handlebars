@@ -1,7 +1,7 @@
-<!--Begin container -->
-<div class="container fluid">
-  <!--Begin navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<!--Begin navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <!--Begin navbar container -->
+  <div class="container fluid">
     <a class="navbar-brand" href="/">Carl's Home Repair and Remodeling</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -14,18 +14,20 @@
           <a class="nav-link" href="/about-us">About Us</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          <a class="nav-link dropdown-toggle" href="/interior-services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Services Offered
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/interior-services">Interior</a>
-            <a class="dropdown-item active" href="/exterior-services">Exterior <span class="sr-only">(current)</span></a>
+            <a class="dropdown-item active" href="/exterior-services">Exterior
+              <span class="sr-only">(current)</span>
+            </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/special-projects">Special Projects</a>
           </div>
         </li>
-                <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/reviews" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Reviews
@@ -42,50 +44,55 @@
 
       </ul>
     </div>
-  </nav>
-  <!--End nav bar -->
+  </div>
+  </div>
+</nav>
+<!--End nav bar -->
 
-    <br>
-    <h3>Exterior projects</h3>  
-    <div class="row">
-    
-     <!--Interior pictures generated here -->
-    <div id = "exterior-pictures" class="col-10 col-sm-8"></div>
+<!--Begin container -->
+<div class="container fluid">
 
-      <!--Begin contact form-->
-      <div id="contact-form" class="col-10 col-sm-4">
-        <h2 class="col">Contact Carl</h2>
+  <br>
+  <h3>Exterior projects</h3>
+  <div class="row">
+
+    <!--Interior pictures generated here -->
+    <div id="exterior-pictures" class="col-10 col-sm-8"></div>
+
+    <!--Begin contact form-->
+    <div id="contact-form" class="col-10 col-sm-4">
+      <h2 class="col">Contact Carl</h2>
+      <br>
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="first-name">First name</label>
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <label for="last-name">Last name</label>
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
         <br>
-        <form>
-          <div class="row">
-            <div class="col">
-              <label for="first-name">First name</label>
-              <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-              <label for="last-name">Last name</label>
-              <input type="text" class="form-control" placeholder="Last name">
-            </div>
+        <div class="row">
+          <div class="col">
+            <label for="last-name">Phone number</label>
+            <input type="text" class="form-control" placeholder="(XXX)-XXX-XXXX">
           </div>
-          <br>
-          <div class="row">
-            <div class="col">
-              <label for="last-name">Phone number</label>
-              <input type="text" class="form-control" placeholder="(XXX)-XXX-XXXX">
-            </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group col">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
           </div>
-          <br>
-          <div class="row">
-            <div class="form-group col">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
-            </div>
-          </div>
-        </form>
-      </div>
-
+        </div>
+      </form>
     </div>
-    <!--End container-->
+
+  </div>
+  <!--End container-->
 </div>
 <!--End contact-->
 

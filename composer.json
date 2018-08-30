@@ -1,7 +1,7 @@
 {
-    "post-install-cmd": [
-        "php artisan clear-compiled",
-        "php artisan optimize",
-        "chmod -R 777 public/"
-    ]
+    "name": "myapp/name",
+    "description": "My awesome app name",
+    "require": {
+        "voodoophp/handlebars": "2.*"
+    }
 }

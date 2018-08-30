@@ -1,11 +1,78 @@
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 20px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    background: #e2dad8;
+
+}
+
+html {
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+#number {
+    padding-top: 5vh;
+}
+
 .footer{
     position: relative;
     bottom: 0px;
     /* border-bottom: 2px groove yellow; */
     text-align: center;
     margin-top: 50px;
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: #41302d;
+    color: whitesmoke;
+    border-top: groove 2px #e2dad8;
+}
+
+.footer-text {
+    color: #b8b1af;
+    font-size: 18px;
+}
+
+a p {
+    color: #b8b1af;
+    -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+    transition: color .5s;
+}
+
+a p:hover {
+    color: rgb(94, 85, 85);
+    text-decoration: wavy;
+}
+
+a:hover {
+  color: rgb(94, 85, 85);
+  text-decoration: wavy;
+}
+
+@media (max-width: 992px) {
+
+.footer-text {
+    color: #b8b1af;
+    font-size: 15px;
+}
+
+.footer-headers {
+    font-size: 18px;
+}
+}
+
+.social-icons {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+.cw-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 form{
@@ -37,8 +104,220 @@ form{
 }
 
 #exterior-images-here.img {
-        min-width: 240px;
+    min-width: 240px;
     min-height: 320px;
     max-width: 240px;
     max-height: 320px;
+}
+
+
+.carousel-caption p{
+    text-align: left;
+}
+
+.carousel-caption h2{
+    text-align: left;
+}
+
+#cw-logo {
+    width: 30vw;
+}
+
+.top-title {
+    text-align: right;
+}
+
+.bg-light {
+    background-color: black;
+}
+
+
+
+/* .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+*/
+
+/* nav {
+    background: url("../images/board.png") repeat-x center;
+    min-height: 50px;
+} */
+
+
+.nav-item a{
+    color: white;
+}
+
+.navbar {
+    background-color: #41302d;
+    /* border-top: groove 2px black; */
+    border-bottom: groove 2px #c2bcbb;
+    min-height: 30px;
+    color: white;
+}
+
+.custom-center {
+    margin: auto;
+}
+
+@media only screen and (max-width: 400px) {
+    .top-title {
+        display:flex;
+        flex-direction: column-reverse;
+      }
+}
+
+.navbar-collapse.collapse {
+    display: block!important;
+  }
+  
+  .navbar-nav>li, .navbar-nav {
+    float: left !important;
+  }
+  
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+  }
+  
+  .navbar-right {
+    float: right!important;
+  }
+
+@media only screen and (max-width: 768px) {
+    .cw-title {
+        width: 100%;
+    }
+
+    #cw-logo {
+        width: 100%;
+    }
+
+    .cw-numbers {
+        width: 0;
+        display: none;
+        text-align: center;
+    }
+
+    .top-title {
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size:10px;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .first {
+        padding-right: auto;
+    }
+    .second {
+        padding-right: auto;
+        padding-left: auto;
+    }
+
+    .third {
+        padding-left: auto;
+    }
+}
+
+#number {
+    font-size: 50px;
+    font-family: 'Goudy Bookletter 1911', serif;
+
+}
+
+#call-now {
+    font-size: 25px;
+    font-family: 'Goudy Bookletter 1911', serif;
+
+}
+
+.background-content {
+    /* background-color: rgba(44, 44, 44, 0.05);
+    border-radius: 15px; */
+    /* padding: 10px; */
+}
+
+@media (min-width: 992px) {
+    .first {
+        padding-right: auto;
+    }
+    .second {
+        padding-right: auto;
+        padding-left: auto;
+    }
+
+    .third {
+        padding-left: auto;
+    }
+}
+
+/* @media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    background: #41302d;
+}
+} */
+
+.btn-primary {
+    color: #fff;
+    background-color: #41302d;
+    border-color: #41302d;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #634945;
+    border-color: #634945;
+}
+
+#navbarSupportedContent {
+    width: 100%;
+}
+
+.background-wood {
+    /* background: rgba(135, 207, 235, 0.25); */
+    background-size: 100%;
+    background: #e2dad8;
+}
+
+.w-100 {
+    border-bottom: groove 2px black;
+    border-bottom-right-radius: 75% 25%;
+}
+
+h2 {
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+label {
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    background: #41302d;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #e2dad8;
+    -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+    transition: color .5s;
+    -webkit-transition: background-color .5s; /* For Safari 3.1 to 6.0 */
+    transition: background-color .5s;
 }

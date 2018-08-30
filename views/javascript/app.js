@@ -122,4 +122,8 @@ $('document').ready(function () {
 
     intAlbum();
     extAlbum();
+
+    $('.carousel').carousel({
+        interval: 4000
+      });
 });

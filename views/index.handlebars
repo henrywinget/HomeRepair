@@ -1,45 +1,77 @@
+<!--Begin header-->
+
+<div class="background-wood">
+
+  <!--Begin header container -->
+
+  <div class="container fluid">
+
+    <div class="row top-title">
+      <div class="col-sm-12 col-lg-4">
+        <a href='/'>
+          <img id="cw-logo" src="./images/logo-no-saw.png" alt='CW Logo'>
+        </a>
+      </div>
+      <div class="row col-sm-0 col-lg-8">
+        <div class="col-sm-12">
+          <h2 id="number">
+            <i class="fas fa-mobile"></i> 214-724-7347</h3>
+        </div>
+        <div class="col-sm-12">
+          <h2 id="call-now">Call or text for a free estimate!</h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--End header container-->
+
+</div>
+<!--End header-->
+
+
 <!--Begin navbar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top">
 
   <!--Begin navbar container -->
   <div class="container fluid">
-    <a class="navbar-brand" href="/">Carl's Home Repair and Remodeling</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+{{!--     
+    <a class="navbar-brand" href="/">CW Home Repair and Remodeling</a> --}}
+    {{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> --}}
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/about-us">About Us
+        <li class="nav-item first">
+          <a class="nav-link" href="/about-us">ABOUT
           </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown second">
           <a class="nav-link dropdown-toggle" href="/interior-services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            Services Offered
+            SERVICES
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/interior-services">Interior</a>
             <a class="dropdown-item" href="/exterior-services">Exterior</a>
-            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/special-projects">Special Projects</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown second">
           <a class="nav-link dropdown-toggle" href="/reviews" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            Reviews
+            REVIEWS
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/add-review">Add a review</a>
-            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/add-review">Review</a>
             <a class="dropdown-item" href="/reviews">View latest reviews</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact-carl">Contact</a>
+        <li class="nav-item third">
+          <a class="nav-link" href="/contact-carl">CONTACT</a>
         </li>
 
       </ul>
@@ -49,117 +81,162 @@
 </nav>
 <!--End nav bar -->
 
-<!--Begin container -->
-<div class="container fluid">
+<!--Begin carousel-->
 
-  <!--Begin carousel-->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="First slide">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="./images/drillin.png" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>CW Home Repair and Remodeling</h2>
+        <p>Serving the north Dallas area since 2005</p>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/paintin.png" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Variety of projects</h2>
+        <p>Offering high-end craftmanship and commitment to detail</p>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/workin.png" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Free Estimates</h2>
+        <p>Available for all home repair, remodeling, or handyman services</p>
       </div>
     </div>
   </div>
-  <form>
+</div>
 
-    <!--End carousel-->
-    <br>
+<!--End carousel-->
+<br>
+<!--Begin container -->
+<div class="container fluid">
 
-    <div class="row">
-      <div id="short-about" class="col-10 col-sm-4">
-        <h2 class="col">Lorem ipsum</h2>
+  <div class="row">
+    <div id="short-about" class="col-lg-7 col-sm-12 background-content">
+      {{!--
+      <h2>
+        <strong>Lorem ipsum</strong>
+      </h2>
+      <br> --}}
+      <p>
+        <strong>Living in a home is a huge investment.</strong>
+      </p>
+      <br>
+      <p>
+        In order to make sure your home is being taken care of, it's imperative to find a business where doing things the
+        <i>right</i> way comes before doing things the
+        fast way.
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante nibh, faucibus et tristique at, faucibus quis dui.
-          Etiam mollis, sapien eu hendrerit sodales, tellus augue pharetra massa, quis auctor eros enim eu tortor. Sed egestas
-          dui porta, gravida diam hendrerit, facilisis turpis. Nullam tempor facilisis luctus. Suspendisse potenti. Duis
-          lorem nisl, faucibus nec erat ac, congue aliquet libero. Quisque venenatis quam eget efficitur tempor. Nam suscipit
-          orci purus, ac consequat nibh condimentum sit amet. Duis vehicula leo eget tellus sagittis tincidunt tempus quis
-          lorem. Curabitur rutrum lectus non libero congue, sollicitudin rhoncus nibh vestibulum. Mauris lacinia ligula ut
-          lobortis iaculis. Mauris ipsum nulla, gravida ut nisi eu, dapibus porttitor massa. Etiam eu metus a leo consequat
-          rhoncus sed elementum mauris.</p>
         <br>
-        <p>Sed auctor, dolor vel venenatis mollis, tellus mauris pharetra purus, in eleifend sem lorem in lorem. Phasellus hendrerit
-          nec erat vehicula condimentum. Nunc eu sem at nunc facilisis rhoncus nec et nibh. Morbi rutrum magna varius, rutrum
-          nisl et, feugiat mi. Donec egestas sapien eu orci lacinia imperdiet. Duis in mi ut sem convallis venenatis. Duis
-          mattis magna quis tempus efficitur. Duis eu hendrerit odio. Cras a elit sed lectus convallis dictum. Sed finibus
-          nulla in dapibus tempor. Nullam iaculis mi ut odio euismod, sit amet sollicitudin mi lacinia.</p>
-      </div>
-      <div id="short-about-2" class="col-10 col-sm-4">
-        <h2 class="col">Neque porro quisquam</h2>
+        I offer free estimates on all projects and do not work by the hour, which means I am focused on the results and determined to give you a painless, exciting experience in 
+        your home improvement. 
         <br>
-        <p>Duis vehicula porta molestie. Phasellus sagittis, justo placerat ultrices lobortis, justo tellus lobortis magna,
-          sit amet tincidunt sapien justo id ligula. Pellentesque ultricies eros eu risus condimentum rhoncus. Fusce vulputate
-          nulla eget nibh tempor, ut malesuada sapien dapibus. Duis laoreet porttitor luctus. Mauris pretium enim purus,
-          ac auctor turpis pretium sed. Maecenas luctus tempor magna, in auctor ex sollicitudin sit amet. Suspendisse eu
-          facilisis dolor.</p>
         <br>
-        <p>Sed auctor, dolor vel venenatis mollis, tellus mauris pharetra purus, in eleifend sem lorem in lorem. Phasellus hendrerit
-          nec erat vehicula condimentum. Nunc eu sem at nunc facilisis rhoncus nec et nibh. Morbi rutrum magna varius, rutrum
-          nisl et, feugiat mi. Donec egestas sapien eu orci lacinia imperdiet. Duis in mi ut sem convallis venenatis. Duis
-          mattis magna quis tempus efficitur. Duis eu hendrerit odio. Cras a elit sed lectus convallis dictum. Sed finibus
-          nulla in dapibus tempor. Nullam iaculis mi ut odio euismod, sit amet sollicitudin mi lacinia.</p>
-      </div>
-      <!--Begin contact form-->
-      <div id="contact-form" class="col-10 col-sm-4">
-        <h2 class="col">Contact Carl</h2>
-        <br>
-        <form>
-          <div class="row">
-            <div class="col">
-              <label for="first-name">First name</label>
-              <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-              <label for="last-name">Last name</label>
-              <input type="text" class="form-control" placeholder="Last name">
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col">
-              <label for="last-name">Phone number</label>
-              <input type="text" class="form-control" placeholder="(XXX)-XXX-XXXX">
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="form-group col">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
-            </div>
-          </div>
-        </form>
-        <input class="btn btn-primary" type="submit" value="Submit">
-      </div>
+         My name is Carl Winget and I take pride in southern values and a commitment to creating the best result for the best price. 
+         I am available to you for all things home repair, remodeling, and handyman services.</p>
+      <br>
+    </div>
+
+    <div class="col-lg-1">
 
     </div>
-    <!--End container-->
+    <!--Begin contact form-->
+    <div id="contact-form" class="col-lg-4 col-sm-11 background-content">
+      <p>
+        <strong>Contact Carl</strong>
+      </p>
+      <br>
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Phone number">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group col">
+            <input type="email" class="form-control" id="email-input" placeholder="Email address">
+          </div>
+        </div>
+      </form>
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+
+  </div>
+  <!--End container-->
 </div>
 <!--End contact-->
 
 <!--Begin footer-->
 <div class="footer">
-  <div class="row">
-    <div class="col lg 12">
-      <a href="https://github.com/henrywinget" target="_blank">
-        <img id="github" src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-128.png" alt="GitHub Icon">
-      </a>
-      <a href="https://www.linkedin.com/in/henry-winget-343240122/" target="_blank">
-        <img id="linkedin" src="https://github.com/henrywinget/Bootstrap-Portfolio/blob/master/images/linkedin-icon.png?raw=true"
-          alt="LinkedIn Icon">
-      </a>
-      <a href="https://stackoverflow.com/users/8904181/henry-winget" target="_blank">
-        <img id="stack" src="https://github.com/henrywinget/Bootstrap-Portfolio/blob/master/images/if_overflow_334695.png?raw=true"
-          alt="StackOverflow Icon">
-      </a>
-      <p>@Henry Winget Copyright 2018</p>
+  <div class="container fluid">
+    <div class="row">
+      <div class="col-lg-4 footer-left">
+              <br>
+        {{!-- <h5 class="footer-headers">NAVIGATE</h5> --}}
+        <div class="row">
+          <a class="col-lg-12" href="/"><p>Home</p></a>
+        </div>
+        <div class="row">
+          <a class="col-lg-12" href="/about-us"><p>About</p></a>
+        </div>
+        <div class="row">
+          <a class="col-lg-12" href="/interior-services"><p>Services</p></a>
+        </div>
+        <div class="row">
+          <a class="col-lg-12" href="/reviews"><p>Review</p></a>
+        </div>
+        <div class="row">
+          <a class="col-lg-12" href="/contact-carl"><p>Contact</p></a>
+        </div>
+      </div>
+      <div class="col-lg-4 footer-center">
+        {{!-- <h5 class="footer-headers">CONTACT</h5> --}}
+        <br>
+        <div class="footer-text">
+          <p>214-724-7347</p>
+          <p>cwhomeremodeling@gmail.com</p>
+          <p>Plano, TX 75023</p>
+          <p>United States</p>
+        </div>
+
+      </div>
+      <div class="col-lg-4 footer-left">
+        {{!-- <h5 class="footer-headers">LEGAL</h5> --}}
+        <br>
+        <div class="footer-text">
+          <p>Copyright @ 2018</p>
+          <p>All rights reserved</p>
+          <p>Website by Henry Winget</p>
+        </div>
+      </div>
+    </div>
+    <div class="row cw-icons">
+      <div class="col-sm-4">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <img src="../images/nextdoor.png" alt="NextDoor CW" class="social-icons">
+        </a>
+        <a href="https://www.facebook.com/pg/CW-Home-Repair-and-Remodeling-1522908157854435/" target="_blank" rel="noopener noreferrer">
+          <img src="../images/facebook.png" alt="Facebook CW" class="social-icons">
+        </a>
+        <a href="mailto:ckhtwinget@yahoo.com" target="_blank" rel="noopener noreferrer">
+          <img src="../images/mail.png" alt="Email CW" class="social-icons">
+        </a>
+      </div>
     </div>
   </div>
 </div>
+
 <!--End footer-->
